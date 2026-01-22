@@ -11,3 +11,4 @@ wheels/
 
 # Logger file
 game_state.json
+game_events.json
