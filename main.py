@@ -43,12 +43,11 @@ def main():
                 print("Game over!")
                 sys.exit()
 
-        for obj in asteroids:
             for shot in shots:
-                if obj.collides_with(shot) == True:
+                if shot.collides_with(obj) == True:
                     log_event("asteroid_shot")
                     shot.kill()
-                    obj.kill()
+                    obj.split()
 
         screen.fill("black")
 
